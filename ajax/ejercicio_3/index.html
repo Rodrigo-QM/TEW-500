@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 con AJAX</title>
+</head>
+<body>
+    <h1>Ejemplo 3 con AJAX</h1>
+
+    <button onclick="enviarSolicitud()">Enviar AJAX</button>
+
+    <h2 id="titulo"></h2>
+
+    <script>
+        function enviarSolicitud(){
+            var theObject = new XMLHttpRequest();
+            theObject.open('POST', 'backend.php', true);
+            theObject.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            theObject.onreadystatechange = function () {
+                //console.log(theObject.responseText);
+                document.getElementById('titulo').innerHTML = theObject.responseText;
+            }
+            theObject.send();
+        }
+    </script>
+</body>
+</html>
