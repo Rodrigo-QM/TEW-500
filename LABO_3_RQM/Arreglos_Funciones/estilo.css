@@ -1,0 +1,36 @@
+body {
+    font-family: tahoma;
+    font-size: 14px;
+}
+#centrado {
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+img {
+    margin: auto;
+    display: block;
+}
+#fi la {
+    font-size: 13px;
+    background: #b9c9fe;
+    color: #039;
+}
+
+#error {
+    color: red;
+    font-size: 12px;
+}
+#codigo {
+    color: blue;
+    font-size: 36px;
+}
+table th {
+    background-color: #b9c9fe;
+}
+table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
